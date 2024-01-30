@@ -11,6 +11,8 @@
     <p>color: {{ finch.color }}</p>
     <p>age: {{ finch.age }}</p>
   </div>
-</div>
+  <a href="/finches/{{ finch.id }}/update">Edit</a>
+  <a href="/finches/{{ finch.id }}/delete">Delete</a>
+  </div>
 
 {% endblock %}
