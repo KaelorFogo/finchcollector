@@ -10,10 +10,12 @@
 <body>
   <header>
     <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/finches/create">Add a Finch</a>
-      <a href="/finches">All Finches</a>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'about' %}">About</a>
+      <a href="{% url 'toys_create' %}">Add a Toy</a>
+      <a href="{% url 'toys_index' %}">View All Toys</a>
+      <a href="{% url 'finch_create' %}">Add a Finch</a>
+      <a href="{% url 'index' %}">View All My Finches</a>
     </nav>
   </header>
   {% block content %}
